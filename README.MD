@@ -7,4 +7,5 @@ Project contains three modules:
 ## run on aws instruction:
 + in aws console (lambda service) upload a fat jar;
 + set FUNCTION_NAME env;
++ set org.springframework.cloud.function.adapter.aws.FunctionInvoker::handleRequest as request handler
 + test function;
