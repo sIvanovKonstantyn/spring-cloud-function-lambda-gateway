@@ -1,0 +1,3 @@
+include 'cloud-function'
+include 'cloud-lambda'
+include 'core-config'
