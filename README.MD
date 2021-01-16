@@ -1,11 +1,12 @@
-# Spring cloud function and cloud lambda demo project:
-Project contains three modules:
-- core-config: contains a repository, model and few functions that represent some functional api;
-- cloud-function: contains function web dependency. After start makes rest api from core-config functions on a local server;
-- cloud-lambda: aws lambda dependencies and plugins (fat jar). There is function name property in application.yml that cloud be overridden by FUNCTION_NAME env.
+#AWS Gateway wit AWS Lambda:
+Project based on "spring cloud function and cloud lambda demo project" contains one module:
+- cloud-lambda: Just one change after base project - input type changed to APIGatewayProxyRequestEvent to handle Gateway trigger events.
 
-## run on aws instruction:
-+ in aws console (lambda service) upload a fat jar;
-+ set FUNCTION_NAME env;
-+ set org.springframework.cloud.function.adapter.aws.FunctionInvoker::handleRequest as request handler
-+ test function;
+
+##Add AWS Gateway to lambda function:
+![img.png](img.png)
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
+![img_4.png](img_4.png)
+![img_5.png](img_5.png)
